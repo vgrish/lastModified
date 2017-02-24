@@ -149,14 +149,14 @@ class lastModified
             }
         }
 
-        $skipTags = $this->getOption('skip_tags', null, 'pre,code', true);
+        $skipTags = $this->getOption('skip_tags', null, 'pre,code,script', true);
         $skipTags = $this->explodeAndClean($skipTags);
         foreach ($skipTags as $skipTag) {
             $skipTag = preg_quote($skipTag);
-            $pattern = "#<{$skipTag}>(.*)</{$skipTag}>#Usi";
+            $pattern = "#<{$skipTag}(.*){$skipTag}>#Usi";
             $html = preg_replace($pattern, '', $html);
         }
-
+        
         $html = strip_tags($html);
         $html = preg_replace("#[\r\n\t\s]#is", '', $html);
 

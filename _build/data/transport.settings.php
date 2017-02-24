@@ -20,7 +20,7 @@ $tmp = array(
     ),
     'skip_tags'      => array(
         'xtype' => 'textarea',
-        'value' => 'pre,code',
+        'value' => 'pre,code,script',
         'area'  => 'lastmodified_main',
     ),
     'working_type'      => array(
