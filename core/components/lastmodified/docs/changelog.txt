@@ -1,5 +1,9 @@
 Changelog for lastModified
 
+1.0.1-beta (24.02.2017)
+==============
+- Add "skip_tags"
+
 1.0.0-beta
 ==============
 - initial

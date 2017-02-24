@@ -8,7 +8,6 @@ $tmp = array(
         'value' => true,
         'area'  => 'lastmodified_main',
     ),
-
     'check_type'        => array(
         'xtype' => 'combo-boolean',
         'value' => true,
@@ -17,6 +16,11 @@ $tmp = array(
     'check_template'    => array(
         'xtype' => 'combo-boolean',
         'value' => false,
+        'area'  => 'lastmodified_main',
+    ),
+    'skip_tags'      => array(
+        'xtype' => 'textarea',
+        'value' => 'pre,code',
         'area'  => 'lastmodified_main',
     ),
     'working_type'      => array(
