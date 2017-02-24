@@ -159,7 +159,7 @@ class lastModified
 
         $html = strip_tags($html);
         $html = preg_replace("#[\r\n\t\s]#is", '', $html);
-        
+
         return sha1($html);
     }
 
